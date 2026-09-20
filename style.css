@@ -131,3 +131,14 @@ p { margin: 0 0 var(--s3); }
   html { scroll-behavior: auto; }
   .btn, .skill-card, .skill-card__detail { transition: none; }
 }
+
+/* ---------- links page ---------- */
+.links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--s3); list-style: none; margin: 0; padding: 0; }
+.link-card { padding: 1px; background: var(--line); clip-path: var(--facet); transition: background 0.2s; }
+.link-card:hover, .link-card:focus-within { background: var(--accent); }
+.link-card > div { height: 100%; box-sizing: border-box; padding: var(--s4) var(--s3); background: var(--panel); clip-path: var(--facet); text-align: center; }
+.link-card h3 { margin-bottom: 4px; }
+.link-card p { margin: 0 0 var(--s3); font-size: 0.9rem; }
+.logo { width: 72px; height: 72px; margin: 0 auto var(--s2); display: grid; place-items: center; background: var(--accent); color: var(--bg); font-weight: 700; font-size: 1.4rem; letter-spacing: 0.06em; clip-path: var(--facet); }
+.btn[aria-disabled="true"] { border-color: var(--line); color: var(--muted); cursor: not-allowed; }
+.btn[aria-disabled="true"]:hover { background: transparent; color: var(--muted); }
