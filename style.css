@@ -1,34 +1,133 @@
-/* A deliberately small starting point.
-   It exists to prove one thing: this file is loading.
-   If you can see spacing and a readable line length, the path in index.html works.
-
-   Delete all of it whenever you want. */
+/* Dark, neon-blue, crystalline. Plain CSS, system fonts, no JS.
+   Spacing scale: 8 / 16 / 24 / 32 / 48 / 64 / 96 px. */
 
 :root {
-  /* Makes the page follow the reader's light or dark mode setting, for free. */
-  color-scheme: light dark;
+  color-scheme: dark;
+  --bg: #07090f;
+  --panel: #0d1220;
+  --line: #1c2a44;
+  --text: #e6ecf5;
+  --muted: #8b97ad;
+  --accent: #00b8ff;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --s5: 48px; --s6: 64px; --s7: 96px;
+  /* cut corners: the "crystal" shape used on portrait and cards */
+  --facet: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
 }
+
+html { scroll-behavior: smooth; }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-
-  /* 65ch caps the line at about 65 characters. Long lines are genuinely hard
-     to read, and this single rule does more for legibility than anything else
-     in this file. */
-  max-width: 65ch;
-
-  margin: 0 auto;
-  padding: 4rem 1.5rem;
-  line-height: 1.6;
-  font-size: 1.125rem;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
 }
 
-h1 {
-  font-size: 3rem;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #7fdcff; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+h1, h2, h3 { line-height: 1.15; margin: 0 0 var(--s2); }
+h1 { font-size: clamp(2.5rem, 7vw, 4.75rem); font-weight: 300; letter-spacing: 0.02em; }
+h2 { font-size: 0.95rem; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--accent); }
+h3 { font-size: 1.25rem; font-weight: 600; }
+p { margin: 0 0 var(--s3); }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 var(--s3); }
+.prose { max-width: 65ch; }
+.muted { color: var(--muted); }
+
+/* ---------- header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(7, 9, 15, 0.94);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s1) var(--s3); padding-top: var(--s2); padding-bottom: var(--s2); }
+.brand { color: var(--text); font-weight: 600; letter-spacing: 0.2em; text-decoration: none; text-transform: uppercase; font-size: 0.9rem; }
+.nav { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); list-style: none; margin: 0; padding: 0; }
+.nav a { color: var(--muted); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; padding: var(--s1) 0; border-bottom: 1px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ---------- hero ---------- */
+.hero {
+  padding: var(--s7) 0 var(--s6);
+  border-bottom: 1px solid var(--line);
+  /* low-poly triangles from hard-stop gradients */
+  background:
+    linear-gradient(135deg, transparent 0 62%, rgba(0, 184, 255, 0.07) 62% 100%),
+    linear-gradient(225deg, rgba(0, 184, 255, 0.10) 0 26%, transparent 26%),
+    linear-gradient(315deg, transparent 0 78%, rgba(0, 184, 255, 0.05) 78% 100%),
+    var(--bg);
+}
+.hero .wrap { display: grid; grid-template-columns: 1fr minmax(200px, 300px); gap: var(--s5); align-items: center; }
+.hero h1 span { color: var(--accent); text-shadow: 0 0 24px rgba(0, 184, 255, 0.45); }
+.hero .lead { font-size: 1.25rem; color: var(--text); margin-bottom: var(--s2); }
+.hero .intro { color: var(--muted); max-width: 52ch; }
+
+.portrait { padding: 1px; background: var(--accent); clip-path: var(--facet); aspect-ratio: 4 / 5; }
+.portrait > div { height: 100%; display: grid; place-items: center; text-align: center; padding: var(--s2); background: var(--panel); clip-path: var(--facet); color: var(--muted); font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* ghost button */
+.btn { display: inline-block; padding: 12px 28px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.8rem; transition: background 0.2s, color 0.2s; }
+.btn:hover { background: var(--accent); color: var(--bg); }
+
+/* ---------- sections ---------- */
+.section { padding: var(--s6) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 72px; }
+.page-title { padding: var(--s6) 0 var(--s4); border-bottom: 1px solid var(--line); }
+.page-title h1 { margin-bottom: var(--s1); font-size: clamp(2.25rem, 6vw, 3.75rem); }
+
+/* ---------- skills grid: cards expand on hover or focus ---------- */
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s2); list-style: none; margin: var(--s4) 0 var(--s5); padding: 0; }
+.skill-card { padding: 1px; background: var(--line); clip-path: var(--facet); transition: background 0.2s; cursor: default; }
+.skill-card > div { height: 100%; box-sizing: border-box; padding: var(--s3); background: var(--panel); clip-path: var(--facet); }
+.skill-card h3 { margin-bottom: var(--s1); }
+.skill-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.skill-card__detail { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.3s ease, opacity 0.25s ease; }
+.skill-card__detail dl { margin: var(--s2) 0 0; padding-top: var(--s2); border-top: 1px solid var(--line); font-size: 0.9rem; }
+.skill-card__detail dt { color: var(--accent); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; }
+.skill-card__detail dd { margin: 0 0 var(--s1); color: var(--text); }
+.skill-card:hover, .skill-card:focus-within { grid-column: 1 / -1; background: var(--accent); }
+.skill-card:hover .skill-card__detail, .skill-card:focus-within .skill-card__detail { max-height: 320px; opacity: 1; }
+
+.skill-lists { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s4); }
+.skill-lists h3 { font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+.skill-lists p { margin: 0; }
+
+/* ---------- case studies ---------- */
+.case { padding: var(--s4); margin-bottom: var(--s4); background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent); clip-path: var(--facet); }
+.case--major { padding: var(--s5) var(--s4); }
+.case--major h2, .case--minor h2 { margin-bottom: var(--s1); }
+.case h3 { font-size: 1.75rem; font-weight: 300; }
+.case--minor h3 { font-size: 1.25rem; font-weight: 600; }
+.case dl { display: grid; grid-template-columns: max-content 1fr; gap: var(--s1) var(--s3); margin: var(--s3) 0 0; }
+.case dt { color: var(--accent); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding-top: 4px; }
+.case dd { margin: 0; }
+
+/* ---------- lifelog ---------- */
+.log-entry { display: grid; grid-template-columns: 9rem 1fr; gap: var(--s3); padding: var(--s3) 0; border-top: 1px solid var(--line); }
+.log-entry time { color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.85rem; }
+.log-entry h3 { font-size: 1rem; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 4px; }
+.log-entry p { margin: 0 0 var(--s2); }
+
+/* ---------- footer ---------- */
+.site-footer { padding: var(--s5) 0; color: var(--muted); font-size: 0.9rem; }
+.site-footer ul { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); list-style: none; margin: 0 0 var(--s2); padding: 0; }
+
+/* ---------- small screens ---------- */
+@media (max-width: 720px) {
+  .hero { padding: var(--s6) 0 var(--s5); }
+  .hero .wrap { grid-template-columns: 1fr; }
+  .portrait { max-width: 220px; order: -1; }
+  .skills-grid, .skill-lists { grid-template-columns: 1fr; }
+  .case dl, .log-entry { grid-template-columns: 1fr; }
+  .case dl { gap: 0; }
+  .case dd { margin-bottom: var(--s2); }
 }
 
-p {
-  margin-bottom: 1.5rem;
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn, .skill-card, .skill-card__detail { transition: none; }
 }

@@ -3,21 +3,136 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello</title>
+  <title>Ryan Freese</title>
+  <meta name="description" content="Ryan Freese, computer science master's student. Projects, skills and a lifelog.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello, world.</h1>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Ryan Freese</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects/">Projects</a></li>
+          <li><a href="lifelog/">Lifelog</a></li>
+          <li><a href="resume/">Resume</a></li>
+          <li><a href="github/">GitHub</a></li>
+          <li><a href="linkedin/">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <p>
-    This page is live. That is the only thing it is here to prove.
-  </p>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Hi <span>There</span></h1>
+          <p class="lead">I am Ryan Freese:</p>
+          <p class="intro">
+            I build [FILL IN: what you build]. I care about [FILL IN: the problems you like].
+            Right now I'm [FILL IN: current focus].
+          </p>
+          <a class="btn" href="projects/">See my work</a>
+        </div>
+        <div class="portrait" role="img" aria-label="Photo of Ryan Freese (placeholder)">
+          <div>Photo<br>goes here</div>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    Everything about it is yours to delete. Open Claude Code in this folder and
-    tell it what you actually want to build.
-  </p>
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2>Skills &amp; certifications</h2>
+        <p class="muted prose">Hover or tab to a card for the details.</p>
+
+        <ul class="skills-grid">
+          <li class="skill-card" tabindex="0"><div>
+            <h3>[FILL IN: Certification 1]</h3>
+            <p>[FILL IN: one-line summary]</p>
+            <div class="skill-card__detail"><dl>
+              <dt>Issuer</dt><dd>[FILL IN]</dd>
+              <dt>Date</dt><dd>[FILL IN]</dd>
+              <dt>What it covers</dt><dd>[FILL IN]</dd>
+              <dt>Related work</dt><dd>[FILL IN: link a project]</dd>
+            </dl></div>
+          </div></li>
+          <li class="skill-card" tabindex="0"><div>
+            <h3>[FILL IN: Certification 2]</h3>
+            <p>[FILL IN: one-line summary]</p>
+            <div class="skill-card__detail"><dl>
+              <dt>Issuer</dt><dd>[FILL IN]</dd>
+              <dt>Date</dt><dd>[FILL IN]</dd>
+              <dt>What it covers</dt><dd>[FILL IN]</dd>
+              <dt>Related work</dt><dd>[FILL IN: link a project]</dd>
+            </dl></div>
+          </div></li>
+          <li class="skill-card" tabindex="0"><div>
+            <h3>[FILL IN: Certification 3]</h3>
+            <p>[FILL IN: one-line summary]</p>
+            <div class="skill-card__detail"><dl>
+              <dt>Issuer</dt><dd>[FILL IN]</dd>
+              <dt>Date</dt><dd>[FILL IN]</dd>
+              <dt>What it covers</dt><dd>[FILL IN]</dd>
+              <dt>Related work</dt><dd>[FILL IN: link a project]</dd>
+            </dl></div>
+          </div></li>
+        </ul>
+
+        <div class="skill-lists">
+          <div>
+            <h3>Languages</h3>
+            <p>Python<br>[FILL IN]<br>[FILL IN]</p>
+          </div>
+          <div>
+            <h3>Systems / Tools</h3>
+            <p>Git<br>[FILL IN]<br>[FILL IN]</p>
+          </div>
+          <div>
+            <h3>Machine Learning</h3>
+            <p>[FILL IN]<br>[FILL IN]<br>[FILL IN]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2>Featured work</h2>
+
+        <article class="case case--major">
+          <h3>[FILL IN: Best project]</h3>
+          <p class="prose">[FILL IN: what it does and why you built it, two sentences.]</p>
+          <a href="projects/">Read the full case study</a>
+        </article>
+
+        <article class="case case--minor">
+          <h3>[FILL IN: Second project]</h3>
+          <p>[FILL IN: one line.] <a href="projects/">Details</a></p>
+        </article>
+
+        <article class="case case--minor">
+          <h3>[FILL IN: Third project]</h3>
+          <p>[FILL IN: one line.] <a href="projects/">Details</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li><a href="mailto:ryandfreese@gmail.com">Email</a></li>
+        <li><a href="github/">GitHub</a></li>
+        <li><a href="linkedin/">LinkedIn</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <p>Ryan Freese, Colorado School of Mines.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
