@@ -16,6 +16,7 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../projects/" aria-current="page">Projects</a></li>
+          <li><a href="../experiences/">Experiences</a></li>
           <li><a href="../lifelog/">Lifelog</a></li>
           <li><a href="../resume/">Resume</a></li>
           <li><a href="../links/">Links</a></li>
@@ -28,7 +29,7 @@
     <div class="page-title">
       <div class="wrap">
         <h1>Projects</h1>
-        <p class="muted">What I built, why, and what was hard about it.</p>
+        <p class="muted">Couple of things so far.</p>
       </div>
     </div>
 
@@ -37,36 +38,36 @@
 
         <article class="case case--major">
           <h2>Major project</h2>
-          <h3>[FILL IN: Project name]</h3>
-          <p class="prose">[FILL IN: short description.]</p>
+          <h3>Autonomous Drone Navigation</h3>
+          <p class="prose">Developed autonomous navigation and mission-control software for utility infrastructure inspection drones at Los Alamos National Laboratory, then coordinated getting that software from simulation into the field.</p>
           <dl>
-            <dt>Technologies</dt><dd>[FILL IN]</dd>
-            <dt>My role</dt><dd>[FILL IN: what you personally did]</dd>
-            <dt>The problem</dt><dd>[FILL IN: what it solved]</dd>
-            <dt>Hard part</dt><dd>[FILL IN: the interesting technical challenge]</dd>
-            <dt>Outcome</dt><dd>[FILL IN: result, with a number if you have one]</dd>
-            <dt>Learned</dt><dd>[FILL IN]</dd>
-            <dt>Link</dt><dd><a href="../links/">[FILL IN: repo or live demo]</a></dd>
+            <dt>Technologies</dt><dd>ROS 2, PX4</dd>
+            <dt>My role</dt><dd>Built the navigation and mission-control software, and the testing and debugging workflows used to validate it against real hardware.</dd>
+            <dt>The problem</dt><dd>Reliable autonomous inspection of utility infrastructure without a pilot on every flight.</dd>
+            <dt>Hard part</dt><dd>Diagnosing synchronization, timing, and navigation failures that only appeared once the software moved from simulation to physical hardware.</dd>
+            <dt>Outcome</dt><dd>Improved autonomous control reliability across both simulated and physical environments, and left behind GitHub documentation of failures and decisions that cut down repeated issues.</dd>
+            <dt>Learned</dt><dd>How much of "autonomy" is actually disciplined debugging of the sim-to-real gap, not the navigation algorithm itself.</dd>
+            <dt>Link</dt><dd>Not public — lab research.</dd>
           </dl>
         </article>
 
         <article class="case case--minor">
           <h2>Project</h2>
-          <h3>[FILL IN: Project name]</h3>
-          <p>[FILL IN: one or two sentences.]</p>
+          <h3>Roofing Contractor Android App</h3>
+          <p>Led a 4-person team to deliver a Java-based Android app for a roofing contractor on a summer timeline, scoping the work, delegating features, and redesigning the UI for clearer navigation. Presented weekly investor updates.</p>
           <dl>
-            <dt>Technologies</dt><dd>[FILL IN]</dd>
-            <dt>Outcome</dt><dd>[FILL IN]</dd>
+            <dt>Technologies</dt><dd>Java, Android Studio</dd>
+            <dt>Outcome</dt><dd>Shipped on schedule; UI redesign improved navigation and usability.</dd>
           </dl>
         </article>
 
         <article class="case case--minor">
           <h2>Project</h2>
-          <h3>[FILL IN: Project name]</h3>
-          <p>[FILL IN: one or two sentences.]</p>
+          <h3>Custom Unity Movement Controller</h3>
+          <p>A first-person movement and physics controller built in Unity using vector mathematics — custom velocity integration, gravity, friction, momentum, surface projections, and collision detection instead of Unity's built-in Rigidbody.</p>
           <dl>
-            <dt>Technologies</dt><dd>[FILL IN]</dd>
-            <dt>Outcome</dt><dd>[FILL IN]</dd>
+            <dt>Technologies</dt><dd>Unity, C#</dd>
+            <dt>Outcome</dt><dd>Fully custom physics movement, no Rigidbody dependency.</dd>
           </dl>
         </article>
 

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiences | Ryan Freese</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">Ryan Freese</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects/">Projects</a></li>
+          <li><a href="../experiences/" aria-current="page">Experiences</a></li>
+          <li><a href="../lifelog/">Lifelog</a></li>
+          <li><a href="../resume/">Resume</a></li>
+          <li><a href="../links/">Links</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-title">
+      <div class="wrap">
+        <h1>Experiences</h1>
+        <p class="muted">Blog posts and life memories.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+
+        <!--
+          HOW TO ADD A NEW POST (no coding needed, no need for Claude):
+
+          1. Duplicate experiences/TEMPLATE-post.html and rename the COPY,
+             lowercase with dashes, no spaces — e.g. spring-break-nz.html.
+          2. Open your new file and replace every [FILL IN] spot: title,
+             quick description, photo file name, and the actual post text.
+          3. Drop your photo into experiences/images/ and point the
+             <img src="images/..."> at that file name (in both the new
+             post file AND the card you add in step 4).
+          4. Copy ONE card block below — everything from <a class="exp-card"
+             down to its closing </a> — paste it above this comment, then
+             edit its href, photo, title and description to match your
+             new post.
+
+          That's the whole workflow. Nothing else needs to change.
+        -->
+
+        <div class="exp-grid">
+
+          <a class="exp-card" href="new-zealand.html">
+            <div class="exp-card__inner">
+              <div class="exp-card__media"><img src="../imago/Main%20Image.jpg" alt=""></div>
+              <div class="exp-card__body">
+                <h3>New Zealand</h3>
+                <p>A semester at the University of Canterbury that reshaped how I think about problems outside a pure CS lens.</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li><a href="mailto:rfreese@mines.edu">Email</a></li>
+        <li><a href="../links/">Links</a></li>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <p>Ryan Freese, Colorado School of Mines.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
