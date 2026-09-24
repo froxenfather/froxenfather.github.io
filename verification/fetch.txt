@@ -1,0 +1,136 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 3942
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Mon, 21 Sep 2026 20:48:32 GMT
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31556952
+ETag: "6ab19820-f66"
+expires: Tue, 22 Sep 2026 18:45:48 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 7718:10441C:351F92:37E929:6AB2CA84
+x-github-edge-region: iad
+Accept-Ranges: bytes
+Age: 0
+Date: Tue, 22 Sep 2026 18:46:29 GMT
+Via: 1.1 varnish
+X-Served-By: cache-den-kden1300041-DEN
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1790102789.103876,VS0,VE74
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 7c20e561cff3bdc69277753847955e7c7cc3e668
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Freese</title>
+  <meta name="description" content="Ryan Freese, computer science master's student. Projects, skills and a lifelog.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Ryan Freese</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects/">Projects</a></li>
+          <li><a href="experiences/">Experiences</a></li>
+          <li><a href="lifelog/">Lifelog</a></li>
+          <li><a href="resume/">Resume</a></li>
+          <li><a href="links/">Links</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1><span>Heya!</span></h1>
+          <p class="lead">Welcome to my Home Base:</p>
+          <p class="intro">
+            Genius, Billionaire, Playboy, Philanthropist.
+          </p>
+          <p>
+            I am focused on connecting Technical to Non-Technical, real world to code. 
+          </p>
+          <p>
+            I am a Masters Student at Colorado School of Mines, studying Computer Science with a focus on Machine Learning and Artificial Intelligence. I also have a passion for Drone Robotics, and Game design, and am currently working on a freelance Game called Hyperstimulant (might add it here later)
+          </p>
+          <a class="btn" href="projects/">See my work</a>
+        </div>
+        <div class="portrait">
+          <div><img src="imago/Main%20Image.jpg" alt="Ryan Freese"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2>Skills</h2>
+
+        <div class="skill-lists">
+          <div>
+            <h3>Languages</h3>
+            <p>Python<br>Ruby<br>C++</p>
+          </div>
+          <div>
+            <h3>Systems / Tools</h3>
+            <p>Git<br>ROS 2<br>Docker</p>
+          </div>
+          <div>
+            <h3>Machine Learning</h3>
+            <p>scikit-learn<br>PyTorch<br>OpenCV</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2>Featured work</h2>
+
+        <article class="case case--major">
+          <h3>Autonomous Drone Navigation — Los Alamos National Laboratory</h3>
+          <p class="prose">Built autonomous navigation and mission-control software for utility infrastructure inspection drones using ROS 2 and PX4. Most of the work was closing the gap between simulation and the field: diagnosing timing, synchronization, and navigation failures that only showed up on real hardware.</p>
+          <a href="projects/">Read the full case study</a>
+        </article>
+
+        <article class="case case--minor">
+          <h3>Roofing Contractor Android App</h3>
+          <p>Led a 4-person team to build and ship a Java Android app for a roofing contractor on a summer deadline. <a href="projects/">Details</a></p>
+        </article>
+
+        <article class="case case--minor">
+          <h3>Custom Unity Movement Controller</h3>
+    100   3942 100   3942   0      0  32974      0                              0100   3942 100   3942   0      0  32917      0                              0100   3942 100   3942   0      0  32864      0                              0
+      <p>A first-person physics controller built from scratch in Unity — custom velocity integration, gravity, friction, and collision, no Rigidbody. <a href="projects/">Details</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul>
+        <li><a href="mailto:rfreese@mines.edu">Email</a></li>
+        <li><a href="links/">Links</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <p>Ryan Freese, Colorado School of Mines.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

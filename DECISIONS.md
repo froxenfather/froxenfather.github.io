@@ -14,7 +14,9 @@ Delete these instructions when you are done, or leave them. It does not matter.
 What you wanted at the start, and what is actually live now.
 Name one thing you dropped or added along the way, and why.
 
-*Your answer here.*
+Personal Website tracking resume, social links, lifelog, and who I am as a coder
+
+Changed: Added a blogpost where I can add my own personal stories whenever!
 
 ---
 
@@ -28,7 +30,8 @@ Say which you picked, what the alternative was, and what you gave up by not taki
 
 "There was no alternative" is not an answer. Find the fork.
 
-*Your answer here.*
+A fork I found was when I was deciding color scheme, and wheather to make a virtual resume, or just upload my pdf
+I went with a vitrual resume, that way I can always change it later
 
 ---
 
@@ -42,7 +45,9 @@ If it genuinely never happened, say so plainly, and then say what you would have
 check in order to notice. Being honest here costs you far less than a story you cannot
 defend when you record your video.
 
-*Your answer here.*
+Impeccable Agent came by and RUINED my website. The exact agent that was supposed to de-slop my website made it look like pure unfiltered s***!
+
+I pushed back extremely hard on it, and ended up scrapping every. single. suggestion that stupid bot made, then handcoded the changed I wished to see.
 
 ---
 
@@ -54,16 +59,15 @@ Then the real question: **what would have made this check fail?**
 A check that could not have failed is not a check.
 
 Link to your `verification/` folder.
+verification/proof
 
-*Your answer here.*
+All of the pages render, All links work from all pages, Header always displays every thing and all external links properly go to my media
+
+A failure would have been if the header did not properly display for each page, or external links did not link externally
 
 ---
 
 ## 5. What is still wrong
 
-One thing on your own site that is not right, not finished, or that you do not
-fully understand.
-
-What would you do next, and how would you find out?
-
-*Your answer here.*
+Optimize my Blogposts.
+Currently can only add a blog from the backend, nothing actually wired up to the frontend!
